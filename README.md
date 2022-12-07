@@ -14,7 +14,7 @@ docker-compose up -d
 cat wireguard/peer1/peer1.conf
 ```
 
-## Adguard [▶️](http://10.2.0.100/)
+## Adguard Home
 
 ```
 http://10.2.0.100
