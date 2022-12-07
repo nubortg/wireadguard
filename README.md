@@ -17,6 +17,7 @@ cat wireguard/peer1/peer1.conf
 ## Adguard
 
 ```
+[http](http://10.2.0.100/)
 login: Admin 
 password: 12345678
 ```
