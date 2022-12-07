@@ -14,10 +14,10 @@ docker-compose up -d
 cat wireguard/peer1/peer1.conf
 ```
 
-## Adguard
+## Adguard [▶️](http://10.2.0.100/)
 
 ```
-[http](http://10.2.0.100/)
+http://10.2.0.100
 login: Admin 
 password: 12345678
 ```
