@@ -58,7 +58,7 @@ services:
 
 
   adguardhome:
-    depends_on: unbound
+    depends_on: [unbound]
     image: adguard/adguardhome
     container_name: adguardhome
     restart: unless-stopped
