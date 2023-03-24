@@ -23,6 +23,8 @@ services:
         ipv4_address: 10.2.0.200
 
   wireguard:
+    sysctls:
+      - net.ipv4.conf.all.mtu=1280
     depends_on: [unbound, adguardhome]
     image: linuxserver/wireguard
     container_name: wireguard
