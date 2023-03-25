@@ -51,7 +51,7 @@ services:
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1      
     restart: unless-stopped
-    command: sh -c "ip link set eth0 mtu 1280"
+    command: sh -c "ip link set wg0 mtu 1280"
     networks:
       private_network:
         ipv4_address: 10.2.0.3
