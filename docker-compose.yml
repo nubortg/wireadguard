@@ -24,7 +24,6 @@ services:
 
   wireguard:
     sysctls:
-      - net.ipv4.conf.all.mtu=1280
       - net.ipv4.conf.all.src_valid_mark=1
     depends_on: [unbound, adguardhome]
     image: linuxserver/wireguard
