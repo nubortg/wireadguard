@@ -19,5 +19,5 @@ cat wireguard/peer1/peer1.conf
 ```
 http://10.2.0.100
 login: Admin 
-password: 12345678
+password: 1234567890
 ```
