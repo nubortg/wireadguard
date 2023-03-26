@@ -3,7 +3,7 @@ bind_port: 80
 beta_bind_port: 0
 users:
   - name: Admin
-  - password: $2y$05$7N1rGUmR7Jvz1VNxS3m6ouKFhX4A7LvflH5InHxalbtYoRUdPc3r.
+  - password: $2y$05$ZNxJosRB388uLD3VFXEWq.QMn8EJ.Ruw3L/sSGeQeXNHm2YjYnDnq
 auth_attempts: 5
 block_auth_min: 15
 http_proxy: ""
