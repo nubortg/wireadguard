@@ -66,8 +66,8 @@ services:
       - TZ=America/Los_Angeles
     volumes:
       - ./work:/opt/adguardhome/work
-      #- ./conf:/opt/adguardhome/conf
-      - ./conf/AdGuardHome.yaml:/opt/adguardhome/conf/AdGuardHome.yaml:ro
+      - ./conf:/opt/adguardhome/conf
+     
 
     networks:
       private_network:
