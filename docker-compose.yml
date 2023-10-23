@@ -23,7 +23,7 @@ services:
         ipv4_address: 10.2.0.200
 
   wireguard:
-    depends_on: [unbound, adguardhome]
+    depends_on: [unbound]
     image: linuxserver/wireguard
     container_name: wireguard
     cap_add:
@@ -46,7 +46,6 @@ services:
     ports:
       - "51820:51820/udp"
     dns:
-      - 10.2.0.100 # Points to adguard
       - 10.2.0.200 # Points to unbound
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1      
@@ -55,19 +54,6 @@ services:
     networks:
       private_network:
         ipv4_address: 10.2.0.3
-
-
-  adguardhome:
-    depends_on: [unbound]
-    image: adguard/adguardhome
-    container_name: adguardhome
-    restart: unless-stopped
-    environment:
-      - TZ=America/Los_Angeles
-    volumes:
-      - ./work:/opt/adguardhome/work
-      - ./conf:/opt/adguardhome/conf
-     
 
     networks:
       private_network:
