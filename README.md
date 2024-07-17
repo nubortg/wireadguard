@@ -8,7 +8,7 @@ WireAdGuard — это комбинация докер контейнеров Wi
 ## Быстрый запуск
 
 ```shell
-git clone https://github.com/nubortg/wireadguard.git
+git clone -b onlywg https://github.com/nubortg/wireadguard.git
 cd wireadguard
 docker-compose up -d
 cat wireguard/peer1/peer1.conf
