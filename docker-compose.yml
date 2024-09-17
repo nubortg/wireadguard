@@ -1,5 +1,4 @@
 version: "3"
-services:
 
 networks:
   private_network:
@@ -9,7 +8,6 @@ networks:
         - subnet: 10.2.0.0/24
 
 services:
-
   unbound:
     image: "mvance/unbound:latest"
     container_name: unbound
