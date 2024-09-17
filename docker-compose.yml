@@ -15,7 +15,6 @@ services:
     hostname: "unbound"
     volumes:
       - "./unbound:/opt/unbound/etc/unbound/"
-
     networks:
       private_network:
         ipv4_address: 10.2.0.200
@@ -53,6 +52,4 @@ services:
       private_network:
         ipv4_address: 10.2.0.3
 
-    networks:
-      private_network:
-        ipv4_address: 10.2.0.100
+  
